@@ -22,5 +22,5 @@ function convertToAdjList(adjMatrix) {
     }
   }
 
-  return list;
+  return adjList;
 }
