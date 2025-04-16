@@ -22,6 +22,14 @@ analyze it as above.
 
 ---
 
+Answer:
+
+I don't think this algorithm has anything to do with edges. Regardless of how the graph's edges are setup, the algorithm is going to traverse the entirety of a $|V| \times |V|$ matrix to then create a corresponding list of lists. It's like seeing if an edge exists (complexity of $\Theta(1)$), but for all edges (becomes $\Theta(|V|^2)$)
+
+The instantiation of the adjacency list and the push operations to it are all done in constant time, so the resulting complexity of this algorithm is quadratic in the number of vertices: $\Theta(|V|^2)$
+
+---
+
 **I certify that I have listed all sources used to complete this exercise, including the use
 of any Large Language Models. All of the work is my own, except where stated
 otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
